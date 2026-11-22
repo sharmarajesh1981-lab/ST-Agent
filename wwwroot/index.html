@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ST-Agent</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<main><h1>ST-Agent</h1><p>Submit a prompt to the local Ollama-backed task queue.</p>
+<form id="task-form"><label>Model <input id="model" value="llama3.2"></label><label>Prompt <textarea id="prompt" required></textarea></label><button>Submit task</button></form>
+<section><h2>Tasks</h2><table><thead><tr><th>Status</th><th>Prompt</th><th>Result</th></tr></thead><tbody id="tasks"></tbody></table></section></main>
+<script src="/app.js"></script>
+</body></html>
